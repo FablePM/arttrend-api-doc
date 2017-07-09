@@ -1,0 +1,63 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  summary: '發送重設密碼信'
+  description: '發送重設密碼信'
+  operationId: 'passwords_post'
+  parameters:
+    -
+      name: 'login[account]'
+      in: formData
+      required: true
+      type: string
+      description: '登入帳號(Email)'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''
+get:
+  summary: '驗證重設密碼用的 Token'
+  description: '若 Token 可用於重設密碼，則會拿到該 Token 所對應的 User 資料'
+  operationId: 'passwords_get'
+  parameters:
+    -
+      name: 'reset_password_token'
+      in: query
+      required: true
+      type: string
+      description: '登入帳號(Email)'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''
+put:
+  consumes:
+    -  application/x-www-form-urlencoded
+  summary: '進行密碼重設'
+  description: '使用 token 進行密碼重設'
+  operationId: 'passwords_put'
+  parameters:
+    -
+      name: 'reset_password_token'
+      in: formData
+      required: true
+      type: string
+      description: '重設密碼的 token'
+      allowEmptyValue: false
+    -
+      name: 'password[new]'
+      in: formData
+      required: true
+      type: string
+      description: '新密碼'
+      allowEmptyValue: false
+    -
+      name: 'password[confirm]'
+      in: formData
+      required: true
+      type: string
+      description: '新密碼確認'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

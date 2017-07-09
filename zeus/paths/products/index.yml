@@ -1,0 +1,7 @@
+get:
+  summary: '拿到所有的付費方案'
+  description: '拿到所有的付費方案'
+  operationId: 'products_get'
+  responses:
+    '200':
+      description: ''

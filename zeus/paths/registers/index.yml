@@ -1,0 +1,49 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  summary: '建立 Register 物件'
+  description: '暫時性的存放註冊資料'
+  operationId: 'registers_post'
+  parameters:
+    -
+      name: 'register[country]'
+      in: formData
+      required: true
+      type: string
+      enum:
+        - tw
+        - cn
+        - hk
+      description: 'User country'
+      allowEmptyValue: false
+    -
+      name: 'register[username]'
+      in: formData
+      required: true
+      type: string
+      description: 'User name for login, should be same as email.'
+      allowEmptyValue: false
+    -
+      name: 'register[email]'
+      in: formData
+      required: true
+      type: string
+      description: 'User email for login.'
+      allowEmptyValue: false
+    -
+      name: 'register[name]'
+      in: formData
+      required: true
+      type: string
+      description: 'User full name.'
+      allowEmptyValue: false
+    -
+      name: 'register[password]'
+      in: formData
+      required: true
+      type: string
+      description: 'User login password, should be at least 5 chars.'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

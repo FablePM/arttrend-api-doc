@@ -1,0 +1,35 @@
+swagger: '2.0'
+info:
+  title: 'Zeus API documentation'
+  version: '1.0'
+host: 'zeus-staging.arttrend.asia'
+basePath: '/'
+schemes:
+  - 'https'
+consumes:
+  - 'application/json'
+produces:
+  - 'application/json'
+securityDefinitions:
+  AccessToken:
+    type: 'apiKey'
+    name: 'access_token'
+    in: 'query'
+security:
+  -
+    AccessToken: []
+paths:
+  /registers:
+    $ref: 'paths/registers/index.yml'
+  /registers/{register_id}:
+    $ref: 'paths/registers/show.yml'
+  /users/validates_account:
+    $ref: 'paths/users/validates_account.yml'
+  /passwords:
+    $ref: 'paths/passwords/index.yml'
+  /session:
+    $ref: 'paths/session/index.yml'
+  /products:
+    $ref: 'paths/products/index.yml'
+  /orders:
+    $ref: 'paths/orders/index.yml'

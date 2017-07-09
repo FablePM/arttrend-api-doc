@@ -1,0 +1,15 @@
+get:
+  summary: '取得單一 Register 物件內容'
+  description: '暫時性的存放註冊資料'
+  operationId: 'registers_show_get'
+  parameters:
+    -
+      name: 'register_id'
+      in: path
+      required: true
+      type: string
+      description: 'Register ID.'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

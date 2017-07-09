@@ -1,0 +1,63 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  summary: '登入'
+  description: '登入。成功後將會拿到 access_token'
+  operationId: 'session_post'
+  parameters:
+    -
+      name: 'login[account]'
+      in: formData
+      required: true
+      type: string
+      description: '登入帳號(Email)'
+      allowEmptyValue: false
+    -
+      name: 'login[password]'
+      in: formData
+      required: true
+      type: string
+      description: '登入密碼'
+      allowEmptyValue: false
+    -
+      name: 'login[remember]'
+      in: formData
+      required: true
+      type: boolean
+      default: false
+      description: '永久不讓 access_token 失效'
+  responses:
+    '200':
+      description: ''
+
+get:
+  summary: '驗證登入後的 access_token'
+  description: '驗證登入後的 access_token'
+  operationId: 'session_get'
+  parameters:
+    -
+      name: 'access_token'
+      in: formData
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''
+
+delete:
+  summary: '登出'
+  description: '登出'
+  operationId: 'session_delete'
+  parameters:
+    -
+      name: 'access_token'
+      in: formData
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

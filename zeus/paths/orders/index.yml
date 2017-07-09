@@ -1,0 +1,17 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  summary: 'Paypal 交易成功後建立訂單'
+  description: 'Paypal 交易成功後會拿到 tx 字串，以此字串完成帳號註冊'
+  operationId: 'orders_post'
+  parameters:
+    -
+      name: 'paypal_tx'
+      in: formData
+      required: true
+      type: string
+      description: '交易成功後從 Paypal 端拿到的 tx'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

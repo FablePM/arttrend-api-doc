@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: 'Zeus API documentation'
   version: '1.0'
-host: 'https://zeus-staging.arttrend.asia'
+host: 'zeus-staging.arttrend.asia'
 basePath: '/'
 schemes:
   - 'https'

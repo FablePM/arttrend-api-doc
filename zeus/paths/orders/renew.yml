@@ -1,9 +1,9 @@
 post:
   consumes:
     -  application/x-www-form-urlencoded
-  summary: 'Paypal 交易成功後建立訂單'
+  summary: 'Paypal 交易成功後延長會員使用期限'
   description: 'Paypal 交易成功後會拿到 tx 字串，以此字串完成帳號註冊。進行 Payapl 交易時，必須依特定格式將資料塞進 paypal 交易的 custom 欄位。'
-  operationId: 'orders_post'
+  operationId: 'orders_renew'
   parameters:
     -
       name: 'paypal_tx'

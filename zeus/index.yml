@@ -33,3 +33,7 @@ paths:
     $ref: 'paths/products/index.yml'
   /orders:
     $ref: 'paths/orders/index.yml'
+  /orders/renew:
+    $ref: 'paths/orders/renew.yml'
+  /exchange:
+    $ref: 'paths/exchange/index.yml'

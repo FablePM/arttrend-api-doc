@@ -1,6 +1,8 @@
 post:
   consumes:
     -  application/x-www-form-urlencoded
+  tags:
+    - 登入
   summary: '登入'
   description: '登入。成功後將會拿到 access_token'
   operationId: 'session_post'
@@ -32,6 +34,8 @@ post:
 
 get:
   summary: '驗證登入後的 access_token'
+  tags:
+    - 登入
   description: '驗證登入後的 access_token'
   operationId: 'session_get'
   parameters:
@@ -48,6 +52,8 @@ get:
 
 delete:
   summary: '登出'
+  tags:
+    - 登入
   description: '登出'
   operationId: 'session_delete'
   parameters:

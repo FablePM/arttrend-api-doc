@@ -1,5 +1,7 @@
 get:
   summary: '取得最新的匯率資訊'
+  tags:
+    - 其他
   description: '取得最新的匯率資訊，以台幣換算之結果'
   operationId: 'exchange_get'
   responses:

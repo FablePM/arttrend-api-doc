@@ -15,6 +15,18 @@ securityDefinitions:
     type: 'apiKey'
     name: 'access_token'
     in: 'query'
+tags:
+  -
+    name: 註冊
+  -
+    name: 忘記密碼
+  -
+    name: 登入
+  -
+    name: 付費
+  -
+    name: 其他
+
 security:
   -
     AccessToken: []

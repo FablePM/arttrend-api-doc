@@ -1,5 +1,7 @@
 get:
   summary: '拿到所有的付費方案'
+  tags:
+    - 付費
   description: '拿到所有的付費方案'
   operationId: 'products_get'
   responses:

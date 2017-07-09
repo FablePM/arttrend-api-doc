@@ -1,5 +1,7 @@
 get:
   summary: '驗證帳號是否可註冊'
+  tags:
+    - 註冊
   description: '即 Email'
   operationId: 'users_validates_account_get'
   parameters:

@@ -1,6 +1,8 @@
 post:
   consumes:
     -  application/x-www-form-urlencoded
+  tags:
+    - 忘記密碼
   summary: '發送重設密碼信'
   description: '發送重設密碼信'
   operationId: 'passwords_post'
@@ -17,6 +19,8 @@ post:
       description: ''
 get:
   summary: '驗證重設密碼用的 Token'
+  tags:
+    - 忘記密碼
   description: '若 Token 可用於重設密碼，則會拿到該 Token 所對應的 User 資料'
   operationId: 'passwords_get'
   parameters:
@@ -33,6 +37,8 @@ get:
 put:
   consumes:
     -  application/x-www-form-urlencoded
+  tags:
+    - 忘記密碼
   summary: '進行密碼重設'
   description: '使用 token 進行密碼重設'
   operationId: 'passwords_put'

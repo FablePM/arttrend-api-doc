@@ -25,6 +25,8 @@ tags:
   -
     name: 付費
   -
+    name: 拍賣
+  -
     name: 其他
 
 security:
@@ -49,3 +51,5 @@ paths:
     $ref: 'paths/orders/renew.yml'
   /exchange:
     $ref: 'paths/exchange/index.yml'
+  /auctions:
+    $ref: 'paths/auctions/index.yml'

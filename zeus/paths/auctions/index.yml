@@ -1,0 +1,60 @@
+get:
+  summary: '搜尋拍賣列表'
+  tags:
+    - 拍賣
+  description: '搜尋拍賣列表，包含進階搜尋'
+  operationId: 'auctions_index'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'q[order_by]'
+      in: query
+      required: false
+      enum:
+        - auction_time
+        - company
+      type: string
+      description: '排序方式：時間近到遠、公司名稱'
+      allowEmptyValue: false
+    -
+      name: 'q[auction_year_eq]'
+      in: query
+      required: false
+      type: string
+      description: '拍賣會年份'
+      allowEmptyValue: true
+    -
+      name: 'q[company_id_in][]'
+      in: query
+      required: false
+      type: string
+      description: '拍賣公司 ID，可多筆'
+      allowEmptyValue: true
+    -
+      name: 'q[place_in][]'
+      in: query
+      required: false
+      type: string
+      description: '拍賣會地點，可多筆'
+      allowEmptyValue: true
+    -
+      name: 'q[auction_season_eq]'
+      in: query
+      required: false
+      type: string
+      description: '拍賣會季節'
+      enum:
+        - 春
+        - 夏
+        - 秋
+        - 冬
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

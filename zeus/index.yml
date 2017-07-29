@@ -69,5 +69,7 @@ paths:
     $ref: 'paths/exchange/index.yml'
   /auctions:
     $ref: 'paths/auctions/index.yml'
+  /auctions/years:
+    $ref: 'paths/auctions/years.yml'
   /companies:
     $ref: 'paths/companies/index.yml'

@@ -51,6 +51,8 @@ paths:
     $ref: 'paths/orders/index.yml'
   /orders/renew:
     $ref: 'paths/orders/renew.yml'
+  /artists:
+    $ref: 'paths/artists/index.yml'
   /artists/{artist_id}:
     $ref: 'paths/artists/show.yml'
   /artists/{artist_id}/futured_auctions/artworks_count:

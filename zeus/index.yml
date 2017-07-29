@@ -25,6 +25,8 @@ tags:
   -
     name: 付費
   -
+    name: 藝術家
+  -
     name: 拍賣
   -
     name: 其他
@@ -49,6 +51,18 @@ paths:
     $ref: 'paths/orders/index.yml'
   /orders/renew:
     $ref: 'paths/orders/renew.yml'
+  /artists/{artist_id}:
+    $reg: 'paths/artists/show.yml'
+  /artists/{artist_id}/futured_auctions/artworks_count:
+    $reg: 'paths/artists/futured_auctions/artworks_count.yml'
+  /artists/{artist_id}/top_artworks:
+    $reg: 'paths/artists/top_artworks.yml'
+  /artists/{artist_id}/artworks_count:
+    $reg: 'paths/artists/artworks_count.yml'
+  /artists/{artist_id}/artworks_stats:
+    $reg: 'paths/artists/artworks_stats.yml'
+  /artists/{artist_id}/toggle_favorite:
+    $reg: 'paths/artists/toggle_favorite.yml'
   /exchange:
     $ref: 'paths/exchange/index.yml'
   /auctions:

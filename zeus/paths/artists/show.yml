@@ -1,0 +1,24 @@
+get:
+  summary: '取得藝術家基本資料'
+  tags:
+    - 藝術家
+  description: '取得藝術家基本資料'
+  operationId: 'artists_show'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'artist_id'
+      in: path
+      required: true
+      type: string
+      description: '藝術家 ID'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

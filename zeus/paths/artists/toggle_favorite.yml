@@ -1,0 +1,24 @@
+post:
+  tags:
+    - 藝術家
+  summary: '加入/移除藝術家到最愛中'
+  description: '加入/移除藝術家到最愛中'
+  operationId: 'artists_toggle_favorite'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'artist_id'
+      in: path
+      required: true
+      type: string
+      description: '藝術家 ID'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

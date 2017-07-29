@@ -1,0 +1,32 @@
+get:
+  summary: '取得藝術家作品列表，拍賣價由高到低排序'
+  tags:
+    - 藝術家
+  description: '取得藝術家作品列表，拍賣價由高到低排序'
+  operationId: 'artists_top_artworks'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'artist_id'
+      in: path
+      required: true
+      type: string
+      description: '藝術家 ID'
+      allowEmptyValue: false
+    -
+      name: 'limit'
+      in: query
+      required: false
+      type: integer
+      description: '最多筆數'
+      default: 10
+      allowEmptyValue: true
+  responses:
+    '200':
+      description: ''

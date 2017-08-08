@@ -27,6 +27,8 @@ tags:
   -
     name: 藝術家
   -
+    name: 藝術品
+  -
     name: 拍賣
   -
     name: 其他
@@ -65,6 +67,8 @@ paths:
     $ref: 'paths/artists/artworks_stats.yml'
   /artists/{artist_id}/toggle_favorite:
     $ref: 'paths/artists/toggle_favorite.yml'
+  /artworks:
+    $ref: 'paths/artworks/index.yml'
   /exchange:
     $ref: 'paths/exchange/index.yml'
   /auctions:

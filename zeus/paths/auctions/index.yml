@@ -33,7 +33,9 @@ get:
       name: 'q[company_id_in][]'
       in: query
       required: false
-      type: string
+      type: array
+      items:
+        type: string
       description: '拍賣公司 ID，可多筆'
       allowEmptyValue: true
     -

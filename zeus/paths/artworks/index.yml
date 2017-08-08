@@ -31,7 +31,7 @@ get:
         - 0
         - 1
       type: integer
-      description: '是否為正向排序，0 代表否，1 代表是，預設為 0'
+      description: '是否為正向排序，0 代表否，1 代表是，預設為 0 (反向排序)'
       allowEmptyValue: false
     -
       name: 'q[auction_id_eq]'
@@ -151,13 +151,12 @@ get:
       default: ''
       allowEmptyValue: true
     -
-      name: 'q[series_ch_in]'
+      name: 'q[series_ch_in][]'
       in: query
       required: false
-      schema:
-        type: array
-        items:
-          type: string
+      type: array
+      items:
+        type: string
       description: '系列名稱，多選、array'
       allowEmptyValue: false
   responses:

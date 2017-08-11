@@ -31,7 +31,7 @@ get:
       enum:
         - 0
         - 1
-      type: integer
+      type: string
       default: 0
       description: '是否為正向排序，0 代表否，1 代表是，預設為 0 (反向排序)'
       allowEmptyValue: true

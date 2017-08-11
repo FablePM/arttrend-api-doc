@@ -13,28 +13,28 @@ get:
       description: '登入成功後拿到的 access_token'
       allowEmptyValue: false
     -
-      name: 'limit'
+      name: 'q[per]'
       in: query
       required: false
       type: integer
       default: 10
       description: '每頁幾筆 (default: 10)'
-      allowEmptyValue: false
+      allowEmptyValue: true
     -
-      name: 'page'
+      name: 'q[page]'
       in: query
       required: false
       type: integer
       default: 1
       description: '第幾頁 (default: 1)'
-      allowEmptyValue: false
+      allowEmptyValue: true
     -
       name: 'q[name_cont]'
       in: query
       required: false
       type: string
       description: '藝術家名稱關鍵字，包含繁中、簡中、英文(不分大小寫)'
-      allowEmptyValue: false
+      allowEmptyValue: true
   responses:
     '200':
       description: ''

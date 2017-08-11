@@ -16,7 +16,7 @@ get:
       name: 'q[per]'
       in: query
       required: false
-      type: integer
+      type: string
       default: 10
       description: '每頁幾筆 (default: 10)'
       allowEmptyValue: true
@@ -24,7 +24,7 @@ get:
       name: 'q[page]'
       in: query
       required: false
-      type: integer
+      type: string
       default: 1
       description: '第幾頁 (default: 1)'
       allowEmptyValue: true

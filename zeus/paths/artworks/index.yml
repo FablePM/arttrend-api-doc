@@ -56,7 +56,7 @@ get:
       required: false
       type: string
       default: 50
-      description: '每頁幾筆（預設: 50）'
+      description: '每頁幾筆（預設: 50），若內容為 "all"，則結果將不會進行分頁，全部列出'
       allowEmptyValue: true
     -
       name: 'q[page]'

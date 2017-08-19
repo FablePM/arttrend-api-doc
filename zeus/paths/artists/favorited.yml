@@ -1,0 +1,17 @@
+get:
+  summary: '取得最愛的藝術家列表'
+  tags:
+    - 藝術家
+  description: '取得最愛的藝術家列表'
+  operationId: 'artists_favorited'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

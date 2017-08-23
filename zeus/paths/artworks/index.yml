@@ -67,6 +67,20 @@ get:
       description: '第幾頁（預設: 1）'
       allowEmptyValue: true
     -
+      name: 'q[id_eq]'
+      in: query
+      required: false
+      type: string
+      description: '藝術品的資料庫 ID 等於'
+      allowEmptyValue: true
+    -
+      name: 'q[id_not_eq]'
+      in: query
+      required: false
+      type: string
+      description: '藝術品的資料庫 ID 「不」等於'
+      allowEmptyValue: true
+    -
       name: 'q[type_id_eq]'
       in: query
       required: false
@@ -114,6 +128,20 @@ get:
       required: false
       type: string
       description: '創作年份結束於（含）'
+      allowEmptyValue: true
+    -
+      name: 'q[auction_year_eq]'
+      in: query
+      required: false
+      type: string
+      description: '拍賣年份等於'
+      allowEmptyValue: true
+    -
+      name: 'q[uuid_eq]'
+      in: query
+      required: false
+      type: string
+      description: '藝術品 UUID 等於'
       allowEmptyValue: true
     -
       name: 'q[auction_year_gte]'

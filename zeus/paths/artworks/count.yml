@@ -1,0 +1,11 @@
+get:
+  summary: '搜尋藝術品(只取總數)'
+  tags:
+    - 藝術品
+  description: '搜尋藝術品(只取總數)'
+  operationId: 'artworks_count'
+  parameters:
+    $ref: '_params.yml'
+  responses:
+    '200':
+      description: ''

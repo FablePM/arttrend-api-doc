@@ -71,6 +71,8 @@ paths:
     $ref: 'paths/artists/toggle_favorite.yml'
   /artworks:
     $ref: 'paths/artworks/index.yml'
+  /artworks/count:
+    $ref: 'paths/artworks/count.yml'
   /exchange:
     $ref: 'paths/exchange/index.yml'
   /auctions:

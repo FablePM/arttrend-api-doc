@@ -5,7 +5,7 @@ get:
   description: '搜尋藝術品，包含進階搜尋'
   operationId: 'artworks_index'
   parameters:
-    $ref: '_params.yml'
+    $ref: 'index_params.yml'
   responses:
     '200':
       description: ''

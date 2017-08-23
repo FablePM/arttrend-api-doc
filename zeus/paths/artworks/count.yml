@@ -5,7 +5,7 @@ get:
   description: '搜尋藝術品(只取總數)'
   operationId: 'artworks_count'
   parameters:
-    $ref: '_params.yml'
+    $ref: 'index_params.yml'
   responses:
     '200':
       description: ''

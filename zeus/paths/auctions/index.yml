@@ -38,6 +38,8 @@ get:
         type: string
       description: '拍賣公司 ID，可多筆'
       allowEmptyValue: true
+      example:
+        - ''
     -
       name: 'q[place_in][]'
       in: query

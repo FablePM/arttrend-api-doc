@@ -89,13 +89,6 @@
   description: '媒材 ID (Material Id)'
   allowEmptyValue: true
 -
-  name: 'q[name_cont]'
-  in: query
-  required: false
-  type: string
-  description: '作品名稱關鍵字'
-  allowEmptyValue: true
--
   name: 'q[keyword_cont]'
   in: query
   required: false

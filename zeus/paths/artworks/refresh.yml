@@ -1,0 +1,18 @@
+post:
+  summary: '更新藝術品欄位資料'
+  tags:
+    - 藝術品
+  description: '更新藝術品欄位資料'
+  operationId: 'artworks_refresh'
+  parameters:
+    -
+      name: 'artwork_id'
+      in: path
+      required: true
+      type: string
+      description: '藝術品 ID'
+      allowEmptyValue: false
+      example: '00EhtS665T'
+  responses:
+    '200':
+      description: ''

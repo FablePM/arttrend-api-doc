@@ -75,6 +75,10 @@ paths:
     $ref: 'paths/artworks/index.yml'
   /artworks/count:
     $ref: 'paths/artworks/count.yml'
+  /artworks/{artwork_id}:
+    $ref: 'paths/artworks/show.yml'
+  /artworks/{artwork_id}/refresh:
+    $ref: 'paths/artworks/refresh.yml'
   /exchange:
     $ref: 'paths/exchange/index.yml'
   /auctions:

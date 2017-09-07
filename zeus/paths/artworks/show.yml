@@ -1,0 +1,25 @@
+get:
+  summary: '取得單一藝術品資料'
+  tags:
+    - 藝術品
+  description: '取得單一藝術品資料'
+  operationId: 'artworks_show'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'artwork_id'
+      in: path
+      required: true
+      type: string
+      description: '藝術品 ID'
+      allowEmptyValue: false
+      example: '00EhtS665T'
+  responses:
+    '200':
+      description: ''

@@ -14,9 +14,11 @@
     - deal_price
     - creation_date
     - name
+    - area
+    - price_per_area
   type: string
   default: 'auction_date'
-  description: '排序方式：拍賣時間(預設)、交易價格、創作時間、名稱'
+  description: '排序方式：拍賣時間(預設)、交易價格、創作時間、名稱、面積、單位面積價格'
   allowEmptyValue: true
 -
   name: 'q[order_asc]'
@@ -182,3 +184,32 @@
   example:
     - '風景'
     - '山景'
+-
+  name: 'q[area_meter_gte]'
+  in: query
+  required: false
+  type: integer
+  description: '面積（公尺）大於'
+  allowEmptyValue: true
+-
+  name: 'q[area_meter_lte]'
+  in: query
+  required: false
+  type: integer
+  description: '面積（公尺）小於'
+  allowEmptyValue: true
+
+-
+  name: 'q[price_ntd_per_area_gte]'
+  in: query
+  required: false
+  type: integer
+  description: '單位面試（平方公尺）價格大於'
+  allowEmptyValue: true
+-
+  name: 'q[price_ntd_per_area_lte]'
+  in: query
+  required: false
+  type: integer
+  description: '單位面試（平方公尺）價格小於'
+  allowEmptyValue: true

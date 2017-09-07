@@ -53,6 +53,8 @@ paths:
     $ref: 'paths/orders/index.yml'
   /orders/renew:
     $ref: 'paths/orders/renew.yml'
+  /orders/{order_id}:
+    $ref: 'paths/orders/show.yml'
   /artists:
     $ref: 'paths/artists/index.yml'
   /artists/favorited:

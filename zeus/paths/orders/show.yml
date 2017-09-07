@@ -1,0 +1,24 @@
+get:
+  summary: '取得訂單資料'
+  tags:
+    - 付費
+  description: '取得訂單資料'
+  operationId: 'orders_show'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'order_id'
+      in: path
+      required: true
+      type: string
+      description: '訂單 ID'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''

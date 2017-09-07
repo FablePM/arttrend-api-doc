@@ -1,3 +1,21 @@
+get:
+  tags:
+    - 付費
+  summary: '取得已登入 user 的所有訂單列表'
+  description: '取得已登入 user 的所有訂單列表'
+  operationId: 'orders_get'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+  responses:
+    '200':
+      description: ''
+
 post:
   consumes:
     -  application/x-www-form-urlencoded

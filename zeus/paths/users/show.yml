@@ -1,0 +1,117 @@
+put:
+  consumes:
+    -  application/x-www-form-urlencoded
+  tags:
+    - 使用者
+  summary: '更新使用者個人資料和登入密碼'
+  description: '更新使用者個人資料和登入密碼'
+  operationId: 'users_update'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'user[name]'
+      in: query
+      required: true
+      type: string
+      description: '真實姓名'
+      example: 'Mars Chen'
+    -
+      name: 'user[gender]'
+      in: query
+      required: true
+      type: string
+      enum:
+        - 男性
+        - 女性
+      description: '性別'
+      example: '男性'
+    -
+      name: 'user[telephone]'
+      in: query
+      required: false
+      type: string
+      description: '電話號碼，必須包含國碼'
+      example: '+886988888888'
+    -
+      name: 'user[unit]'
+      in: query
+      required: true
+      type: string
+      enum:
+        - cm
+        - inch
+      description: '單位'
+      example: 'cm'
+    -
+      name: 'user[munit]'
+      in: query
+      required: true
+      type: string
+      enum:
+        - 平方米
+        - 平呎
+        - 平方英吋
+        - 才
+        - 號數
+      description: '面積單位'
+      example: '平方米'
+    -
+      name: 'user[currency]'
+      in: query
+      required: true
+      type: string
+      enum:
+        - TWD
+        - USD
+        - EUR
+        - RMB
+        - HKD
+        - SGD
+      description: '貨幣'
+      example: 'TWD'
+    -
+      name: 'user[country]'
+      in: query
+      required: true
+      type: string
+      description: '國家'
+      example: 'tw'
+    -
+      name: 'user[language]'
+      in: query
+      required: true
+      type: string
+      enum:
+        - 繁體中文
+        - 简体中文
+      description: '語言'
+      example: '繁體中文'
+    -
+      name: 'user[birthday]'
+      in: query
+      required: false
+      type: string
+      description: '生日'
+      example: '1982/03/30'
+    -
+      name: 'user[new_password]'
+      in: query
+      required: false
+      type: string
+      description: '新密碼，沒填或空白字串表示不改'
+    -
+      name: 'user[password_confirmation]'
+      in: query
+      required: false
+      type: string
+      description: '新密碼確認，若 new_password 有填，則此欄位必須和 new_password 一致'
+
+  responses:
+    '200':
+      description: ''

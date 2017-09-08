@@ -16,9 +16,10 @@
     - name
     - area
     - price_per_area
+    - lot
   type: string
   default: 'auction_date'
-  description: '排序方式：拍賣時間(預設)、交易價格、創作時間、名稱、面積、單位面積價格'
+  description: '排序方式：拍賣時間(預設)、交易價格、創作時間、名稱、面積、單位面積價格、lot 編號'
   allowEmptyValue: true
 -
   name: 'q[order_asc]'

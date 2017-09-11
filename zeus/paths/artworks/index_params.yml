@@ -189,7 +189,8 @@
   name: 'q[area_meter_gte]'
   in: query
   required: false
-  type: integer
+  schema:
+    type: integer
   description: '面積（公尺）大於'
   allowEmptyValue: true
 -

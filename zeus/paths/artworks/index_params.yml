@@ -196,7 +196,8 @@
   name: 'q[area_meter_lte]'
   in: query
   required: false
-  type: integer
+  schema:
+    type: integer
   description: '面積（公尺）小於'
   allowEmptyValue: true
 
@@ -204,13 +205,15 @@
   name: 'q[price_ntd_per_area_gte]'
   in: query
   required: false
-  type: integer
-  description: '單位面試（平方公尺）價格大於'
+  schema:
+    type: integer
+  description: '單位面積（平方公尺）價格大於'
   allowEmptyValue: true
 -
   name: 'q[price_ntd_per_area_lte]'
   in: query
   required: false
-  type: integer
-  description: '單位面試（平方公尺）價格小於'
+  schema:
+    type: integer
+  description: '單位面積（平方公尺）價格小於'
   allowEmptyValue: true

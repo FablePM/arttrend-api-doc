@@ -103,7 +103,7 @@
   in: query
   required: false
   type: string
-  description: '作品、藝術家名稱關鍵字，當 artist_id_eq 有值時，此欄位無效'
+  description: '作品、藝術家名稱關鍵字，當 artist_id_eq 有值時，此欄位無效。和 names_cont 併用時， names_cont 為先決條件。'
   allowEmptyValue: true
 -
   name: 'q[lot_eq]'

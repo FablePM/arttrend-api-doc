@@ -25,13 +25,7 @@ post:
   description: 'Paypal 交易成功後會拿到 tx 字串，以此字串完成帳號註冊。進行 Payapl 交易時，必須依特定格式將資料塞進 paypal 交易的 custom 欄位。'
   operationId: 'orders_post'
   parameters:
-    -
-      name: 'paypal_tx'
-      in: formData
-      required: true
-      type: string
-      description: '交易成功後從 Paypal 端拿到的 tx'
-      allowEmptyValue: false
+    $ref: 'payment_params.yml'
   responses:
     '200':
       description: ''

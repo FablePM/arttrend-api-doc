@@ -1,0 +1,14 @@
+-
+  name: 'paypal_tx'
+  in: formData
+  required: true
+  type: string
+  description: '交易成功後從 Paypal 端拿到的 tx'
+  allowEmptyValue: false
+-
+  name: 'paypal_id'
+  in: formData
+  required: false
+  type: string
+  description: '交易成功後從 Paypal 端拿到的 payment_id，確保 sku 中的格式 {product_id},{register_id}'
+  allowEmptyValue: false

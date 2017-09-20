@@ -1,7 +1,7 @@
 -
   name: 'paypal_tx'
   in: formData
-  required: true
+  required: false
   type: string
   description: '交易成功後從 Paypal 端拿到的 tx'
   allowEmptyValue: false

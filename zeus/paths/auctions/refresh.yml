@@ -1,0 +1,18 @@
+get:
+  summary: '更新拍賣場次相關資料'
+  tags:
+    - 拍賣
+  description: '更新拍賣場次相關資料'
+  operationId: 'auctions_refresh'
+  parameters:
+    -
+      name: 'auction_id'
+      in: path
+      required: true
+      type: string
+      description: '拍賣會 ID'
+      allowEmptyValue: false
+      example: '2ekxifL1dJ'
+  responses:
+    '200':
+      description: ''

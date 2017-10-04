@@ -87,8 +87,6 @@ paths:
     $ref: 'paths/exchange/index.yml'
   /auctions:
     $ref: 'paths/auctions/index.yml'
-  /auctions:
-    $ref: 'paths/auctions/{}index.yml'
   /auctions/{auction_id}:
     $ref: 'paths/auctions/show.yml'
   /auctions/{auction_id}/refresh:

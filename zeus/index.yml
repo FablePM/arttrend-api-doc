@@ -65,6 +65,8 @@ paths:
     $ref: 'paths/artists/favorited.yml'
   /artists/{artist_id}:
     $ref: 'paths/artists/show.yml'
+  /artists/{artist_id}/trend:
+    $ref: 'paths/artists/trend.yml'
   /artists/{artist_id}/futured_auctions/artworks_count:
     $ref: 'paths/artists/futured_auctions/artworks_count.yml'
   /artists/{artist_id}/top_artworks:

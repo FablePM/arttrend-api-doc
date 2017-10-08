@@ -33,6 +33,8 @@ tags:
   -
     name: 拍賣
   -
+    name: TOP相關
+  -
     name: 其他
 
 security:
@@ -97,3 +99,7 @@ paths:
     $ref: 'paths/auctions/years.yml'
   /companies:
     $ref: 'paths/companies/index.yml'
+  /ranking/artists:
+    $ref: 'paths/ranking/artists.yml'
+  /ranking/artworks:
+    $ref: 'paths/ranking/artworks.yml'

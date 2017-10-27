@@ -63,6 +63,8 @@ paths:
     $ref: 'paths/orders/show.yml'
   /artists:
     $ref: 'paths/artists/index.yml'
+  /artists/compare:
+    $ref: 'paths/artists/compare.yml'
   /artists/favorited:
     $ref: 'paths/artists/favorited.yml'
   /artists/{artist_id}:

@@ -19,12 +19,12 @@ get:
       required: true
       items:
         type: string
-      description: '藝術家帶作品類型資料(JSON string)'
+      description: '藝術家帶作品類型資料(dash 隔開)'
       allowEmptyValue: false
       example:
-        - '{"id":"cP1Q65E5Vc","type_name":"全部媒材"}'
-        - '{"id":"cP1Q65E5Vc","type_name":"繪畫-畫布"}'
-        - '{"id":"cP1Q65E5Vc","type_name":"版畫"}'
+        - cP1Q65E5Vc-全部媒材
+        - cP1Q65E5Vc-繪畫-畫布
+        - cP1Q65E5Vc-版畫
   responses:
     '200':
       description: ''

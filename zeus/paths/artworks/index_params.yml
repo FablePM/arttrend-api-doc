@@ -1,10 +1,5 @@
 -
-  name: 'access_token'
-  in: query
-  required: true
-  type: string
-  description: '登入成功後拿到的 access_token'
-  allowEmptyValue: false
+  $ref: '../../parameters/access_token.yml'
 -
   name: 'q[order_by]'
   in: query

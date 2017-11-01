@@ -1,0 +1,29 @@
+get:
+  summary: '取得拍賣公司交叉分析資料'
+  tags:
+    - 拍賣
+  description: '取得拍賣公司交叉分析資料'
+  operationId: 'companies_compare'
+  parameters:
+    -
+      name: 'access_token'
+      in: query
+      required: true
+      type: string
+      description: '登入成功後拿到的 access_token'
+      allowEmptyValue: false
+    -
+      name: 'company_ids'
+      in: query
+      type: array
+      required: true
+      items:
+        type: string
+      description: '拍賣公司 ID'
+      allowEmptyValue: false
+      example:
+        - 2PUPjQJlJR
+        - nxfC50ivxY
+  responses:
+    '200':
+      description: ''

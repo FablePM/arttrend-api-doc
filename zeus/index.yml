@@ -101,6 +101,8 @@ paths:
     $ref: 'paths/auctions/years.yml'
   /companies:
     $ref: 'paths/companies/index.yml'
+  /companies/compare:
+    $ref: 'paths/companies/compare.yml'
   /ranking/artists:
     $ref: 'paths/ranking/artists.yml'
   /ranking/artworks:

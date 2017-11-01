@@ -1,5 +1,5 @@
 -
-  $ref: '../../parameters/access_token.yml'
+  $ref: '../../params/access_token.yml'
 -
   name: 'q[order_by]'
   in: query

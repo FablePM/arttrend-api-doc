@@ -8,12 +8,7 @@ post:
     -
       $ref: '../../params/access_token.yml'
     -
-      name: 'artist_id'
-      in: path
-      required: true
-      type: string
-      description: '藝術家 ID'
-      allowEmptyValue: false
+      $ref: '../../params/artist_id_path.yml'
   responses:
     '200':
       description: ''

@@ -1,0 +1,6 @@
+name: 'artist_id'
+in: path
+required: true
+type: string
+description: '藝術家 ID'
+allowEmptyValue: false

@@ -6,7 +6,7 @@ get:
   operationId: 'artists_futured_auctions_artworks_count'
   parameters:
     -
-      $ref: '../../params/access_token.yml'
+      $ref: '../../../params/access_token.yml'
     -
       name: 'artist_id'
       in: path

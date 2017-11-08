@@ -1,0 +1,12 @@
+get:
+  tags:
+    - 其他
+  summary: '取得所以市場報告列表'
+  description: '取得所以市場報告列表'
+  operationId: 'reports_index'
+  parameters:
+    -
+      $ref: '../../params/access_token.yml'
+  responses:
+    '200':
+      description: ''

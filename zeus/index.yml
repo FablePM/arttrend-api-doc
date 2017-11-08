@@ -81,6 +81,8 @@ paths:
     $ref: 'paths/artists/artworks_stats.yml'
   /artists/{artist_id}/toggle_favorite:
     $ref: 'paths/artists/toggle_favorite.yml'
+  /artists/{artist_id}/refresh:
+    $ref: 'paths/artists/refresh.yml'
   /artworks:
     $ref: 'paths/artworks/index.yml'
   /artworks/count:

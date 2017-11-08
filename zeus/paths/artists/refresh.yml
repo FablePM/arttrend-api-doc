@@ -1,0 +1,12 @@
+get:
+  summary: '更新藝術家欄位資料'
+  tags:
+    - 藝術家
+  description: '更新藝術家欄位資料'
+  operationId: 'artists_refresh'
+  parameters:
+    -
+      $ref: '../../params/artist_id_path.yml'
+  responses:
+    '200':
+      description: ''

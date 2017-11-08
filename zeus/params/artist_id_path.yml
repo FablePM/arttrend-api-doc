@@ -4,3 +4,4 @@ required: true
 type: string
 description: '藝術家 ID'
 allowEmptyValue: false
+example: 'GD7lWHtBfM'

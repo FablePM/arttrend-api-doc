@@ -101,6 +101,8 @@ paths:
     $ref: 'paths/auctions/refresh.yml'
   /auctions/years:
     $ref: 'paths/auctions/years.yml'
+  /places:
+    $ref: 'paths/places/index.yml'
   /companies:
     $ref: 'paths/companies/index.yml'
   /companies/compare:

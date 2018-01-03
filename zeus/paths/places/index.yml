@@ -1,0 +1,12 @@
+get:
+  summary: '拍賣會所在地點列表'
+  tags:
+    - 拍賣
+  description: '拍賣會所在地點列表'
+  operationId: 'places_index'
+  parameters:
+    -
+      $ref: '../../params/access_token.yml'
+  responses:
+    '200':
+      description: ''

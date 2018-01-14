@@ -1,0 +1,17 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  tags:
+    - 登入
+  summary: '登入'
+  description: '以 One time password 登入'
+  operationId: 'session_otp'
+  parameters:
+    -
+      name: 'otp'
+      required: true
+      type: string
+      description: 'one time password'
+  responses:
+    '200':
+      description: ''

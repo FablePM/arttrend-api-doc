@@ -51,6 +51,8 @@ paths:
     $ref: 'paths/passwords/index.yml'
   /session:
     $ref: 'paths/session/index.yml'
+  /session/otp:
+    $ref: 'paths/session/otp.yml'
   /user:
     $ref: 'paths/users/show.yml'
   /products:

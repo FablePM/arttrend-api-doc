@@ -9,6 +9,7 @@ post:
   parameters:
     -
       name: 'otp'
+      in: formData
       required: true
       type: string
       description: 'one time password'

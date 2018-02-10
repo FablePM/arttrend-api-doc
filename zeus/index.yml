@@ -53,6 +53,8 @@ paths:
     $ref: 'paths/session/index.yml'
   /session/otp:
     $ref: 'paths/session/otp.yml'
+  /session/generate_otp:
+    $ref: 'paths/session/generate_otp.yml'
   /user:
     $ref: 'paths/users/show.yml'
   /products:

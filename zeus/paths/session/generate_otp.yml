@@ -1,0 +1,14 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  tags:
+    - 登入
+  summary: '產生一組 OTP'
+  description: '已登入狀態下，產生一組 OTP'
+  operationId: 'session_generate_otp'
+  parameters:
+    -
+      $ref: '../../params/access_token.yml'
+  responses:
+    '200':
+      description: ''

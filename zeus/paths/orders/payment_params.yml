@@ -10,5 +10,5 @@
   in: formData
   required: false
   type: string
-  description: '交易成功後從 Paypal 端拿到的 payment_id，確保 sku 中的格式 {product_id},{register_id}'
+  description: '交易成功後從 Paypal 端拿到的 payment_id，確保 sku 中的格式 {product_id},{register_id},{user_id} (續約時，因為沒有 register_id，所以格式會是 {product_id},,{user_id} ，同理註冊時因為沒有 user_id ，所以格式會是 {product_id},{register_id})'
   allowEmptyValue: false

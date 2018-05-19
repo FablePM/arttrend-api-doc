@@ -115,7 +115,7 @@ paths:
     $ref: 'paths/ranking/artists.yml'
   /ranking/artworks:
     $ref: 'paths/ranking/artworks.yml'
-  /ranking/artworks:
+  /ranking/meta_categories:
     $ref: 'paths/ranking/meta_categories.yml'
   /reports:
     $ref: 'paths/reports/index.yml'

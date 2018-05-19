@@ -7,6 +7,8 @@ get:
   parameters:
     -
       $ref: '../../params/access_token.yml'
+    -
+      $ref: '../../params/category_for_top.yml'
   responses:
     '200':
       description: ''

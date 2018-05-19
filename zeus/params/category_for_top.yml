@@ -1,0 +1,5 @@
+name: 'category'
+in: query
+required: false
+type: string
+description: 'TOP頁面的分類名稱'

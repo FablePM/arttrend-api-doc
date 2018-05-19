@@ -1,0 +1,12 @@
+get:
+  tags:
+    - TOP相關
+  summary: 'TOP頁面的分類資料'
+  description: 'TOP頁面的分類資料'
+  operationId: 'ranking_meta_categories'
+  parameters:
+    -
+      $ref: '../../params/access_token.yml'
+  responses:
+    '200':
+      description: ''

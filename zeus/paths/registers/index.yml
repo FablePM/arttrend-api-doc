@@ -46,6 +46,30 @@ post:
       type: string
       description: 'User login password, should be at least 5 chars.'
       allowEmptyValue: false
+    -
+      name: 'register[mobile]'
+      in: formData
+      required: false
+      type: string
+      description: '包含國碼的電話號碼，例如 +886972888888'
+    -
+      name: 'register[national_id]'
+      in: formData
+      required: false
+      type: string
+      description: '身分證字號'
+    -
+      name: 'register[zipcode]'
+      in: formData
+      required: false
+      type: string
+      description: '郵遞區號'
+    -
+      name: 'register[address]'
+      in: formData
+      required: false
+      type: string
+      description: '完整地址'
   responses:
     '200':
       description: ''

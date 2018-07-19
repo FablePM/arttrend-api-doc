@@ -1,0 +1,30 @@
+post:
+  consumes:
+    -  application/x-www-form-urlencoded
+  tags:
+    - 付費
+  summary: '以 Tappay 付款進行註冊'
+  description: '以 Tappay 付款進行註冊'
+  operationId: 'orders_post_tappay'
+  parameters:
+    -
+      name: 'tappay[prime]'
+      in: formData
+      required: true
+      type: string
+      description: '前端使用 Tappay SDK 在使用者輸入信用卡資訊後所拿到的值'
+    -
+      name: 'tappay[payment_id]'
+      in: formData
+      required: false
+      type: string
+      description: '透過 POST /payments 後拿到的 payment_id'
+    -
+      name: 'tappay[register_id]'
+      in: formData
+      required: false
+      type: integer
+      description: '使用者填完註冊資訊後，前端會拿到的 register id'
+  responses:
+    '200':
+      description: ''

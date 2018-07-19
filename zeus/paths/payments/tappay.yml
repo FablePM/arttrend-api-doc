@@ -1,0 +1,70 @@
+post:
+  summary: '依 payment id 進行 tappay 付款'
+  tags:
+    - 付費
+  description: '取得 payment id 後，拿著從前端取得的 prime 進行 tappay 付款'
+  operationId: 'payments_tappay'
+  parameters:
+    -
+      name: 'payment_id'
+      in: path
+      required: true
+      type: string
+      description: 'payment id'
+    -
+      name: 'tappay[prime]'
+      in: formData
+      required: true
+      type: string
+      description: '透過前端 tappay sdk，經使用者輸入信用卡資訊後所取得的 prime'
+    -
+      name: 'tappay[details]'
+      in: formData
+      required: true
+      type: string
+      description: '付款明細內容，因目前只有針對 Product 付款，所以可以用 product.name 當做付款明細內容'
+    -
+      name: 'tappay[order_number]'
+      in: formData
+      required: true
+      type: string
+      description: '自定訂單編號。以會員費用為例，註冊時會拿到register id，且會得知使用者選擇哪一個product id。因此此欄位內容可填"Register#abc,Product#123"，其中 abc 為 register id，123 為 product id'
+    -
+      name: 'tappay[cardholder][phone_number]'
+      in: formData
+      required: true
+      type: string
+      description: 'Tappay 要求付款資訊必須包含消費者手機號碼，必須包含國碼，例如 +886972888888'
+    -
+      name: 'tappay[cardholder][name]'
+      in: formData
+      required: true
+      type: string
+      description: 'Tappay 要求付款資訊必須包含消費者姓名'
+    -
+      name: 'tappay[cardholder][email]'
+      in: formData
+      required: true
+      type: string
+      description: 'Tappay 要求付款資訊必須包含消費者 email'
+    -
+      name: 'tappay[cardholder][zip_code]'
+      in: formData
+      required: false
+      type: string
+      description: '消費者地址郵遞區號，可選填'
+    -
+      name: 'tappay[cardholder][address]'
+      in: formData
+      required: false
+      type: string
+      description: '消費者詳細地址，可選填'
+    -
+      name: 'tappay[cardholder][national_id]'
+      in: formData
+      required: false
+      type: string
+      description: '消費者身分證字號，可選填'
+  responses:
+    '200':
+      description: ''

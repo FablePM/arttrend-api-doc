@@ -65,6 +65,10 @@ paths:
     $ref: 'paths/orders/renew.yml'
   /orders/{order_id}:
     $ref: 'paths/orders/show.yml'
+  /orders/tappay:
+    $ref: 'paths/orders/tappay.yml'
+  /payments/:
+    $ref: 'paths/payments/create.yml'
   /artists:
     $ref: 'paths/artists/index.yml'
   /artists/compare:

@@ -1,0 +1,40 @@
+post:
+  summary: '取得付款的唯一識別碼(payment id)'
+  tags:
+    - 付費
+  description: '取得付款的id，此id將會和應付金額綁定，以增加付款api的安全性'
+  operationId: 'payments_create'
+  parameters:
+    -
+      name: 'payment[item_type]'
+      in: formData
+      required: true
+      type: string
+      description: '付款物件的類型，目前只有 Product'
+      default: 'Product'
+      enum:
+        - Product
+    -
+      name: 'payment[item_id]'
+      in: formData
+      required: true
+      type: string
+      description: '付款物件的 ID，例如 item_type=Product，item_id 則為 Product ID'
+    -
+      name: 'payment[amount]'
+      in: formData
+      required: false
+      type: string
+      description: '應付金額，若 item_type+item_id 無法取得應付金額的話，可在此欄位直接指定金額，此欄位必須和 currency 必須一起丟'
+    -
+      name: 'payment[currency]'
+      in: formData
+      required: false
+      type: string
+      description: '應付金額的幣別'
+      enum:
+        - TWD
+        - USD
+  responses:
+    '200':
+      description: ''

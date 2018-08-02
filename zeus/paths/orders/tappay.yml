@@ -23,7 +23,7 @@ post:
       name: 'tappay[register_id]'
       in: formData
       required: false
-      type: integer
+      type: string
       description: '使用者填完註冊資訊後，前端會拿到的 register id'
   responses:
     '200':

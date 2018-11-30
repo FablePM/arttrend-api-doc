@@ -31,6 +31,12 @@ post:
       required: false
       type: string
       description: '續約時可以使用的參數'
+    -
+      name: 'tappay[three_domain_secure_redirect_to]'
+      in: formData
+      required: false
+      type: string
+      description: '如要啟動簡訊3D驗證時，可在參數填入驗證後欲重新導向的網址，網址必須是 https:// 開頭'
   responses:
     '200':
       description: ''
